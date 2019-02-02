@@ -36,4 +36,14 @@ return this.wsService.escuchar('mensaje-nuevo');
 return this.wsService.escuchar('mensaje-privado');
 
  }
+
+ getUsuariosActivos() {
+
+  return this.wsService.escuchar('usuarios-activos');
+ }
+
+ getObtenerUsuarios() {
+  return this.wsService.emitir('obtener-usuarios');
+
+ }
 }
